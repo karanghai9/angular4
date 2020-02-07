@@ -1,0 +1,14 @@
+<div class='row'>
+    <div class="col-md-12">
+        <a href="#" class="list-group-item clearfix top-buffer" *ngFor="let eachCourse of courses">
+            <div class="pull-left">
+                <h4 class="list-group-item-heading">{{ eachCourse.name }}</h4>
+                <p class="list-group-item-text">{{ eachCourse.description }}</p>
+            </div>
+            <span class="pull-right">
+                <img [src]="eachCourse.imagePath" alt="{{ eachCourse.name }}" class="img-responsive" style="width: 240px;height: 150px;">
+            </span>
+        </a>
+        <hr>
+    </div>
+</div>
